@@ -24,16 +24,12 @@ public class Ej_ecuacion {
         n3 = teclado.nextDouble();
         
         Xpos = (-n2 + Math.sqrt(Math.pow(n2, 2 ) - 4*n1*n3)) / (2*n1);
-        Xneg = (-n2 - Math.sqrt(Math.pow(n2, 2 ) - 2*n1*n3)) / (2*n1);
-        
-        
-        
-        
+        Xneg = (-n2 - Math.sqrt(Math.pow(n2, 2 ) - 4*n1*n3)) / (2*n1);
         
         XposCalculo = (n1*Math.pow(Xpos,2) + (n2*Xpos)+ n3);
         XnegCalculo = (n1*Math.pow(Xneg,2) + (n2*Xneg)+ n3);
+        
         System.out.printf("El resultado de X = %.3f es: %.3f %n",Xpos,XposCalculo);
         System.out.printf("El resultado de X = %.3f es: %.3f %n",Xneg,XnegCalculo);
-        System.out.println("JAJAJAJAJAJA IBAI");
     }
 }
